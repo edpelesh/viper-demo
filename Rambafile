@@ -1,0 +1,23 @@
+### Headers settings
+company: Demo
+
+### Xcode project settings
+project_name: app
+xcodeproj_path: demo.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: app
+
+# The file path for new modules
+project_file_path: app/Modules
+
+# The Xcode group path to new modules
+project_group_path: app/Modules
+
+### Dependencies settings section
+cartfile_path: Cartfile
+
+### Templates
+templates:
+- {name: viper_arch}

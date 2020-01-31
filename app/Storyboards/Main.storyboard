@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e49-7N-IKf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hello View Controller-->
+        <scene sceneID="Mj6-gQ-lf8">
+            <objects>
+                <viewController id="e49-7N-IKf" customClass="HelloViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rnT-fk-eRl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tC9-tx-tqe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                <connections>
+                                    <segue destination="uRs-yh-of9" kind="embed" identifier="ButtonsEmbedSegue" id="giR-0X-B0q"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhI-en-vTU">
+                                <rect key="frame" x="158" y="426.5" width="98" height="53"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="Toggle">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapToggleButton" destination="e49-7N-IKf" eventType="touchUpInside" id="bZY-7o-cA4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PhI-en-vTU" firstAttribute="height" secondItem="03s-a1-zDE" secondAttribute="height" multiplier="0.0647922" id="1dZ-nz-gbv"/>
+                            <constraint firstItem="tC9-tx-tqe" firstAttribute="leading" secondItem="03s-a1-zDE" secondAttribute="leading" id="2h0-MN-LOU"/>
+                            <constraint firstItem="tC9-tx-tqe" firstAttribute="height" secondItem="rnT-fk-eRl" secondAttribute="height" multiplier="0.3" id="IRY-CL-fOK"/>
+                            <constraint firstItem="03s-a1-zDE" firstAttribute="trailing" secondItem="tC9-tx-tqe" secondAttribute="trailing" id="RDq-eR-UQ5"/>
+                            <constraint firstItem="PhI-en-vTU" firstAttribute="centerX" secondItem="03s-a1-zDE" secondAttribute="centerX" id="YXH-Pv-1wD"/>
+                            <constraint firstItem="PhI-en-vTU" firstAttribute="centerY" secondItem="03s-a1-zDE" secondAttribute="centerY" id="gEg-LX-ZLx"/>
+                            <constraint firstItem="tC9-tx-tqe" firstAttribute="top" secondItem="rnT-fk-eRl" secondAttribute="top" id="kIT-05-orb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="03s-a1-zDE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSW-o4-ELc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="84"/>
+        </scene>
+        <!--Buttons View Controller-->
+        <scene sceneID="Fma-iK-nt4">
+            <objects>
+                <viewController id="uRs-yh-of9" customClass="ButtonsViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W7E-zl-oqI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xCE-et-cEk">
+                                <rect key="frame" x="107" y="112.5" width="200" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Yh7-2H-8ei"/>
+                                    <constraint firstAttribute="height" constant="44" id="ljg-GB-dmI"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Green"/>
+                                    <segment title="Red"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didChangeSegment:" destination="uRs-yh-of9" eventType="valueChanged" id="y59-HU-Mhv"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xCE-et-cEk" firstAttribute="centerX" secondItem="W7E-zl-oqI" secondAttribute="centerX" id="L3P-sd-J9j"/>
+                            <constraint firstItem="xCE-et-cEk" firstAttribute="centerY" secondItem="W7E-zl-oqI" secondAttribute="centerY" id="bzV-zz-CgD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JY0-rw-YJc"/>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="xCE-et-cEk" id="h97-rF-oun"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dj3-eR-qXf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="-127"/>
+        </scene>
+    </scenes>
+</document>

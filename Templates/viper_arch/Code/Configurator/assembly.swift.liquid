@@ -1,0 +1,52 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+import Swinject
+import SwinjectStoryboard
+
+final class {{ module_info.name }}Assembly: Assembly {
+
+    func assemble(container: Container) {
+
+        container.storyboardInitCompleted({{ module_info.name }}ViewController.self) { (r, view) in
+            view.output = r.resolve({{ module_info.name }}Presenter.self, argument: view)
+        }
+
+        container.register({{ module_info.name }}ViewController.self) { r in
+            let view = {{ module_info.name }}ViewController()
+            view.output = r.resolve({{ module_info.name }}Presenter.self, argument: view)
+            return view
+        }
+
+        container.register({{ module_info.name }}Presenter.self) { (r, view: {{ module_info.name }}ViewController) in
+            let presenter = {{ module_info.name }}Presenter()
+            let interactor = r.resolve({{ module_info.name }}Interactor.self, argument: presenter)!
+            let router = r.resolve({{ module_info.name }}Router.self, arguments: view, interactor)!
+            presenter.view = view
+            presenter.interactor = interactor
+            presenter.router = router
+            return presenter
+        }
+
+        container.register({{ module_info.name }}Interactor.self) { (r, presenter: {{ module_info.name }}Presenter) in
+            let interactor = {{ module_info.name }}Interactor()
+            interactor.output = presenter
+            return interactor
+        }
+
+        container.register({{ module_info.name }}Router.self) { (r, view: {{ module_info.name }}ViewController, interactor: {{ module_info.name }}Interactor) in
+            let router = {{ module_info.name }}Router()
+            router.interactor = interactor
+            router.transitionHandler = view
+            return router
+        }
+
+    }
+
+}
