@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,12 +15,6 @@
 		298C25A27286FF9CC0F92419 /* HelloPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B9708FC902324CFD34B0E9 /* HelloPresenter.swift */; };
 		29C510133E190261C139DB96 /* HelloModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569FE0BAC40F41F3FEE131D6 /* HelloModuleInput.swift */; };
 		4460BE3205E180A5D73EB091 /* ButtonsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A1A09F2746C1EF3C89232D /* ButtonsInteractor.swift */; };
-		5E06D4FC23E4E1C900DBECC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E06D4F923E4E1C900DBECC0 /* SwinjectStoryboard.framework */; };
-		5E06D4FD23E4E1C900DBECC0 /* SwinjectStoryboard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E06D4F923E4E1C900DBECC0 /* SwinjectStoryboard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E06D4FE23E4E1C900DBECC0 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E06D4FA23E4E1C900DBECC0 /* Swinject.framework */; };
-		5E06D4FF23E4E1C900DBECC0 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E06D4FA23E4E1C900DBECC0 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5E06D50023E4E1C900DBECC0 /* ViperArch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E06D4FB23E4E1C900DBECC0 /* ViperArch.framework */; };
-		5E06D50123E4E1C900DBECC0 /* ViperArch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5E06D4FB23E4E1C900DBECC0 /* ViperArch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5E1BD8E0239080320073BA1B /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BD8DF239080320073BA1B /* ApplicationAssembly.swift */; };
 		5E1BD8E2239080590073BA1B /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BD8E1239080590073BA1B /* NetworkAssembly.swift */; };
 		5E43E58F239075F900DE7246 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E43E58E239075F900DE7246 /* AppDelegate.swift */; };
@@ -37,6 +31,12 @@
 		99F73C4628B8514663D21F88 /* HelloAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C20E2D2C417CD99D49F3A4 /* HelloAssembly.swift */; };
 		A28BA369C7F7209C32CCF4FA /* HelloViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BFB8888DE470E28ED5054E /* HelloViewOutput.swift */; };
 		BEAA7BE311F9A1FAE95F89E1 /* HelloInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB33DA65898DD3D7658C51 /* HelloInteractor.swift */; };
+		C07D8D9F266E7CE60001A94D /* Swinject.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07D8D9E266E7CE60001A94D /* Swinject.xcframework */; };
+		C07D8DA0266E7CE60001A94D /* Swinject.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C07D8D9E266E7CE60001A94D /* Swinject.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C07D8DA2266E7CEF0001A94D /* SwinjectStoryboard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07D8DA1266E7CEF0001A94D /* SwinjectStoryboard.xcframework */; };
+		C07D8DA3266E7CEF0001A94D /* SwinjectStoryboard.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C07D8DA1266E7CEF0001A94D /* SwinjectStoryboard.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C07D8DA5266E7CF90001A94D /* ViperArch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07D8DA4266E7CF90001A94D /* ViperArch.xcframework */; };
+		C07D8DA6266E7CF90001A94D /* ViperArch.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C07D8DA4266E7CF90001A94D /* ViperArch.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D2A5A2142EC2EA10F0EE3BF1 /* ButtonsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65997080A81C10C1131A5D01 /* ButtonsInteractorOutput.swift */; };
 		DC5F0B481D4DAB906B77B51B /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3FC9529D5C4ABECEEFC67C /* ButtonsViewController.swift */; };
 		DF354B04C932202BB16D8984 /* ButtonsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34511A10B7A2201719488A55 /* ButtonsViewInput.swift */; };
@@ -52,9 +52,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5E06D4FD23E4E1C900DBECC0 /* SwinjectStoryboard.framework in Embed Frameworks */,
-				5E06D4FF23E4E1C900DBECC0 /* Swinject.framework in Embed Frameworks */,
-				5E06D50123E4E1C900DBECC0 /* ViperArch.framework in Embed Frameworks */,
+				C07D8DA0266E7CE60001A94D /* Swinject.xcframework in Embed Frameworks */,
+				C07D8DA6266E7CF90001A94D /* ViperArch.xcframework in Embed Frameworks */,
+				C07D8DA3266E7CEF0001A94D /* SwinjectStoryboard.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,9 +70,6 @@
 		34511A10B7A2201719488A55 /* ButtonsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonsViewInput.swift; sourceTree = "<group>"; };
 		3FB571C3D88216B3CEACCC48 /* HelloViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 		569FE0BAC40F41F3FEE131D6 /* HelloModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloModuleInput.swift; sourceTree = "<group>"; };
-		5E06D4F923E4E1C900DBECC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
-		5E06D4FA23E4E1C900DBECC0 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
-		5E06D4FB23E4E1C900DBECC0 /* ViperArch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ViperArch.framework; path = Carthage/Build/iOS/ViperArch.framework; sourceTree = "<group>"; };
 		5E1BD8DF239080320073BA1B /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		5E1BD8E1239080590073BA1B /* NetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
 		5E43E58B239075F900DE7246 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +90,9 @@
 		99C20E2D2C417CD99D49F3A4 /* HelloAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloAssembly.swift; sourceTree = "<group>"; };
 		A6A1A09F2746C1EF3C89232D /* ButtonsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonsInteractor.swift; sourceTree = "<group>"; };
 		BA3FC9529D5C4ABECEEFC67C /* ButtonsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
+		C07D8D9E266E7CE60001A94D /* Swinject.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Swinject.xcframework; path = Carthage/Build/Swinject.xcframework; sourceTree = "<group>"; };
+		C07D8DA1266E7CEF0001A94D /* SwinjectStoryboard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwinjectStoryboard.xcframework; path = Carthage/Build/SwinjectStoryboard.xcframework; sourceTree = "<group>"; };
+		C07D8DA4266E7CF90001A94D /* ViperArch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ViperArch.xcframework; path = Carthage/Build/ViperArch.xcframework; sourceTree = "<group>"; };
 		C216082D12276663235C91BE /* ButtonsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ButtonsViewOutput.swift; sourceTree = "<group>"; };
 		C8BFB8888DE470E28ED5054E /* HelloViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloViewOutput.swift; sourceTree = "<group>"; };
 		D9B9708FC902324CFD34B0E9 /* HelloPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelloPresenter.swift; sourceTree = "<group>"; };
@@ -106,9 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E06D4FC23E4E1C900DBECC0 /* SwinjectStoryboard.framework in Frameworks */,
-				5E06D4FE23E4E1C900DBECC0 /* Swinject.framework in Frameworks */,
-				5E06D50023E4E1C900DBECC0 /* ViperArch.framework in Frameworks */,
+				C07D8D9F266E7CE60001A94D /* Swinject.xcframework in Frameworks */,
+				C07D8DA5266E7CF90001A94D /* ViperArch.xcframework in Frameworks */,
+				C07D8DA2266E7CEF0001A94D /* SwinjectStoryboard.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,6 @@
 			children = (
 				EA21736997DB5F98AF91EB1C /* ButtonsAssembly.swift */,
 			);
-			name = Configurator;
 			path = Configurator;
 			sourceTree = "<group>";
 		};
@@ -131,7 +130,6 @@
 				C216082D12276663235C91BE /* ButtonsViewOutput.swift */,
 				BA3FC9529D5C4ABECEEFC67C /* ButtonsViewController.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -141,16 +139,15 @@
 				0CB1CCBB22C49382AA027B04 /* ButtonsModuleInput.swift */,
 				8CC87AA41BC41DBFEA1A22B1 /* ButtonsPresenter.swift */,
 			);
-			name = Presenter;
 			path = Presenter;
 			sourceTree = "<group>";
 		};
 		5E1BD8E52390822B0073BA1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E06D4FA23E4E1C900DBECC0 /* Swinject.framework */,
-				5E06D4F923E4E1C900DBECC0 /* SwinjectStoryboard.framework */,
-				5E06D4FB23E4E1C900DBECC0 /* ViperArch.framework */,
+				C07D8DA4266E7CF90001A94D /* ViperArch.xcframework */,
+				C07D8DA1266E7CEF0001A94D /* SwinjectStoryboard.xcframework */,
+				C07D8D9E266E7CE60001A94D /* Swinject.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,7 +293,6 @@
 				0AC0867C8835D7D161A311B5 /* ButtonsRouterInput.swift */,
 				20239512ED04E1934FA96568 /* ButtonsRouter.swift */,
 			);
-			name = Router;
 			path = Router;
 			sourceTree = "<group>";
 		};
@@ -309,7 +305,6 @@
 				C331831E1AA294B3C81C6529 /* Router */,
 				0C8CB8502C3D9EB4C45DC5EE /* Configurator */,
 			);
-			name = Buttons;
 			path = Buttons;
 			sourceTree = "<group>";
 		};
@@ -320,7 +315,6 @@
 				65997080A81C10C1131A5D01 /* ButtonsInteractorOutput.swift */,
 				A6A1A09F2746C1EF3C89232D /* ButtonsInteractor.swift */,
 			);
-			name = Interactor;
 			path = Interactor;
 			sourceTree = "<group>";
 		};
@@ -538,7 +532,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -555,7 +550,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "app/Info-Dev.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.com.demo.app;
 				PRODUCT_NAME = App;
@@ -577,7 +575,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = app/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.com.demo.app;
 				PRODUCT_NAME = App;
